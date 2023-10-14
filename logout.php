@@ -9,5 +9,5 @@ $_SESSION = array();
 session_destroy();
 
 // Redirect to the login page after logout
-header('Location: index.php'); // Change this to your login page URL
+header('Location: login.php'); // Change this to your login page URL
 exit;

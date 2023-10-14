@@ -1,0 +1,41 @@
+/* login.css */
+
+/* Body background color */
+body {
+    background-color: #f4f4f4;
+}
+
+/* Container for login form */
+.login-container {
+    margin-top: 100px;
+}
+
+/* Card styles */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Card header background color and text color */
+.card-header {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Form input field styles */
+.form-group label {
+    font-weight: bold;
+}
+
+/* Submit button styles */
+.btn-primary {
+    background-color: #007BFF;
+    border-color: #007BFF;
+    color: #fff;
+}
+
+/* Error message styles */
+.text-danger {
+    color: #FF0000;
+}

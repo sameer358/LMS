@@ -1,0 +1,59 @@
+/* Styles for the main container */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Styling for each feature section */
+.admin-section {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.admin-section h2 {
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+/* Add specific styles for each feature section by using their respective IDs */
+#exam-management {
+    /* Your custom styles for exam management section */
+}
+
+#user-management {
+    /* Your custom styles for user management section */
+}
+
+#result-analysis {
+    /* Your custom styles for result analysis section */
+}
+
+#notifications {
+    /* Your custom styles for notification section */
+}
+
+#data-export {
+    /* Your custom styles for data export section */
+}
+
+#security-features {
+    /* Your custom styles for security features section */
+}
+
+#feedback-analysis {
+    /* Your custom styles for feedback analysis section */
+}

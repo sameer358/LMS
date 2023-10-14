@@ -1,3 +1,4 @@
+
 <?php
 // Start a session (if not already started)
 session_start();
@@ -32,82 +33,13 @@ if (!$user) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Dashboard</title>
     <!-- Include Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Include your custom CSS -->
-    <link rel="stylesheet" href="style.css">
-    <style>
-       /* Add your custom CSS styles here */
-/* Improve responsiveness */
-@media (max-width: 768px) {
-    .left-section, .right-section {
-        padding: 10px;
-    }
-}
-
-/* Customize colors and typography */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-}
-
-.navbar {
-    background-color: #007bff;
-}
-
-.navbar-brand {
-    color: #fff;
-    font-weight: bold;
-}
-
-.nav-link {
-    color: #007bff !important;
-}
-
-/* Add transitions and hover effects */
-.nav-link:hover {
-    background-color: #0056b3 !important;
-    color: #fff !important;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.card {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s;
-}
-
-.card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Customize buttons */
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-}
-
-/* Add custom footer styles */
-.footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Additional custom styles for specific elements can be added as needed */
-
-    </style>
+    <link rel="stylesheet" href="dashboard.css">
+   
 </head>
 <body>
     <!-- Navigation Menu -->
@@ -222,16 +154,16 @@ $user_id = $_SESSION['user_id'];
 <div class="col-md-9 right-section">
     <!-- Assignment Details -->
     <div class="card">
-        <div class="card-header">
-            Assignment Details
-        </div>
-        <div class="card-body">
-            <!-- Add your assignment details here -->
-            Assignment name: Assignment 1
-            Due date: September 30, 2023
-            Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </div>
-    </div>
+    <div class="card-header">
+    Assignment Details
+</div>
+<div class="card-body">
+    <!-- Add your assignment details here -->
+    <p><strong>Assignment name:</strong> Assignment 1</p>
+    <p><strong>Due date:</strong> September 30, 2023</p>
+    <p><strong>Attempt Quiz here:</strong> <a href="exam.php" class="btn btn-primary">Quiz</a></p>
+</div>
+</div>
 
     <!-- Course Progress -->
     <div class="card mt-3">
@@ -272,7 +204,11 @@ $user_id = $_SESSION['user_id'];
 
     <!-- Footer -->
     <div class="footer">
-        &copy; <?php echo date("Y"); ?> Your Company Name. All Rights Reserved.
+    
+    &copy; 2023 Learning Management System (LMS) | Developed by <a href="https://www.computecentral.in" target="_blank">Compute Central India</a>
+    <br>
+    Contact: <a href="mailto:support@computecentral.in">support@computecentral.in</a> | Phone: <a href="tel:+11234567890">+1 (123) 456-7890</a>
+
     </div>
 
     <!-- Include Bootstrap JS and jQuery -->

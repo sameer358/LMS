@@ -1,0 +1,180 @@
+/* Common styles for all screen sizes */
+@media (max-width: 768px) {
+    /* Adjust the navigation bar for smaller screens */
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: column;
+    }
+
+    /* Adjust table styles for smaller screens */
+    .table td, .table th {
+        font-size: 14px;
+        padding: 0.5rem;
+    }
+}
+
+/* Custom styles for the header and navigation */
+.navbar {
+    background-color: #3498db;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 24px;
+}
+
+.navbar-brand img {
+    max-height: 40px;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 18px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f39c12;
+}
+
+/* Custom styles for the main content */
+body {
+    background-color: #ecf0f1;
+}
+
+.container-main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    min-height: calc(100vh - 105px); /* Make container at least full viewport height minus header and footer */
+}
+
+h1 {
+    color: #333;
+}
+
+/* Custom styles for forms */
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Custom styles for buttons */
+.btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+    font-size: 18px;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+/* Custom styles for modals */
+.modal-content {
+    background-color: #ecf0f1;
+}
+/* Slider container */
+        .slider {
+            width: 300px;
+            overflow: hidden;
+        }
+
+        /* Slides container */
+        .slides {
+            display: flex;
+            transition: transform 0.5s;
+        }
+
+        /* Individual slide */
+        .slide {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        /* Navigation buttons */
+        .slider-nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        /* Navigation button style */
+        .slider-nav button {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+/* Custom styles for footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Footer links */
+footer a {
+    color: #4e12f3;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Custom styles for social media icons */
+.social-icons {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+/* Jumbotron styles */
+.jumbotron {
+    background-color: #3498db;
+    color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.jumbotron h1 {
+    font-size: 36px;
+}
+
+.jumbotron p {
+    font-size: 18px;
+}
+
+/* Modal title */
+.modal-title {
+    font-size: 24px;
+}
+
+/* Modal form inputs */
+.form-control {
+    margin-bottom: 15px;
+}
+
+/* Modal buttons */
+.modal-footer .btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
